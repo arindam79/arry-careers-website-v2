@@ -4,57 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <title>Arry Careers</title>
-  <style>
-    h1{
-      font-size: 40px;
-      font-family: Ariel;
-      font-weight: normal;
-      color: rgb(50 ,50 ,50);;
-      text-align: center;
-    }
-
-    #banner{
-      width: 100%;
-      height: 360px;
-      object-fit: cover;
-    }
-    h2{
-      font-family: Roboto;
-      font-size: 32px;
-      color: rgb(100,100,100);
-      text-align: center;
-      font-weight: normal;
-    }
-
-    p{
-      font-family: Roboto;
-      
-    }
-    #container{
-      max-width: 720px;
-      margin: 0 auto 0 auto;
-    }
-    .jobs{
-      max-width: 720px;
-      margin: 0 auto 0 auto;
-    }
-  </style>
 </head>
 <body>
   <div id='container'>
     <h1>Arry Careers</h1>
     <img id="banner" src="./static/banner.jpg" alt="Arry Careers Banner">
-    <p></p>This is place where you get to know about me</p>
+    <p>This is place where you get to know about me</p>
     <h2>About Arry</h2>
-    <p>Replit was co-founded by programmers Amjad Masad, Faris Masad, and designer Haya Odeh in 2016.[1][2] Once listed as a co-founder alongside Masad, Max Shawabkeh left the venture early on.[5][6][7] Its name comes from the acronym REPL, which stands for "read–evaluate–print loop".</p>
+    <p>Replit was co-founded by programmers Amjad Masad, Faris Masad, and designer Haya Odeh        in 2016.[1][2] Once listed as a co-founder alongside Masad, Max Shawabkeh left the           venture early on.[5][6][7] Its name comes from the acronym REPL, which stands for            "read–evaluate–print loop".</p>
     <h2>Open positions</h2>
     <div class='jobs'>
       {% for job in jobs %}
         {% include 'jobItems.html' %}
       {% endfor %}
     </div>
-    <button>Contact Us</button>
-    </div>  
+    <button class='btn'>Contact Us</button>
+  </div>  
 </body>
 </html>
