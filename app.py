@@ -1,5 +1,7 @@
 from flask import Flask, render_template, jsonify
 
+
+
 app = Flask(__name__)
 
 JOBS = [
@@ -28,6 +30,9 @@ JOBS = [
     'salary': '$120,000'
   },
 ]
+
+
+
 
 @app.route('/')
 def hello_world():
